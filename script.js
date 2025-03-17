@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const animeImage = document.getElementById('animeImage');
     const loader = document.getElementById('loader');
 
+    // Set image styles to fill screen
+    animeImage.style.width = '100vw';
+    animeImage.style.height = '100vh';
+    animeImage.style.objectFit = 'cover';
+
     //const API_ENDPOINTS = [
     //    "https://api.waifu.pics/sfw/waifu",
     //    "https://api.waifu.im/search/?included_tags=waifu"

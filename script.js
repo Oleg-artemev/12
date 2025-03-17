@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const animeImage = document.getElementById('animeImage');
     const loader = document.getElementById('loader');
 
-    const API_ENDPOINTS = [
-        "https://api.waifu.pics/sfw/waifu",
-        "https://api.waifu.im/search/?included_tags=waifu"
-    ];
+    //const API_ENDPOINTS = [
+    //    "https://api.waifu.pics/sfw/waifu",
+    //    "https://api.waifu.im/search/?included_tags=waifu"
+    //];
 
     async function generateImage() {
         try {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             generateBtn.disabled = true;
 
             // Choose random API endpoint
-            const endpoint = API_ENDPOINTS[Math.floor(Math.random() * API_ENDPOINTS.length)];
+            const endpoint = "https://api.waifu.im/search/?included_tags=waifu";
             
             // Get image URL from API
             const response = await fetch(endpoint);
